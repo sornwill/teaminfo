@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sornwill/teaminfo#readme",
   "dependencies": {
-    "gitignore": "^0.6.0"
+    "gitignore": "^0.6.0",
+    "inquirer": "^7.1.0"
   }
 }
