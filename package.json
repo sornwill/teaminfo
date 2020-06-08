@@ -1,0 +1,22 @@
+{
+  "name": "teaminfo",
+  "version": "1.0.0",
+  "description": "Displays a team of managers, engineers, interns, and others.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sornwill/teaminfo.git"
+  },
+  "author": "WS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sornwill/teaminfo/issues"
+  },
+  "homepage": "https://github.com/sornwill/teaminfo#readme",
+  "dependencies": {
+    "gitignore": "^0.6.0"
+  }
+}
