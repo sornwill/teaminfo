@@ -15,16 +15,14 @@ const render = require("./lib/htmlRenderer");
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
-EmployeeNumbers();
+getEmployees();
 
-for(i = 0; i <= teamNum; i++){
-    console.log(i);
-}
+
 
 
 // FUNCTIONS
 
-function EmployeeNumbers(){
+function EmployeeNumbers(num){
     inquirer.prompt([
         {
             type:"input",
@@ -34,12 +32,15 @@ function EmployeeNumbers(){
     ])
     .then(function(teamNum){
         console.log(teamNum);
-        return teamNum;
+        num = teamNum;
     })
-   
 };
 
-function getEmployee(){ // Get's employee name, id, email via inquirer
+function forLoop(){
+    
+}
+
+function getEmployees(){ // Get's employee name, id, email via inquirer
     inquirer.prompt([
         {
             type:"input",
@@ -65,10 +66,44 @@ function getEmployee(){ // Get's employee name, id, email via inquirer
     ])
     .then(function(info){
         console.log(info);
+
+        
     })
+    
+    if(info.role === "Manager"){
+        getManager();
+    }
 };
 
+function getManager(){
+    inquirer.prompt([
+        {
+            type:"input",
+            message:"What is the Manager's Office #?",
+            name:"officeNumber"
+        }
+    ])
+};
 
+function getIntern(){
+    inquirer.prompt([
+        {
+            type:"input",
+            message:"What is the Interns School?",
+            name:"school"
+        }
+    ])
+};
+
+function getEngineer(){
+    inquirer.prompt([
+        {
+            type:"input",
+            message:"What is the Engineer's GitHub Name?",
+            name:"github"
+        }
+    ])
+};
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
