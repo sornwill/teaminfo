@@ -41,6 +41,7 @@ function init(){  //initializes Introduction of Team App. Gives choices of addin
                 break;
             case "Render File":
                 console.log("\nRendering File...\n");
+                console.log(employees);
                 render(employees);
                 break;
         }
@@ -121,15 +122,6 @@ function getEmployees(){ // Get's employee name, id, email via inquirer then dep
         
     ])
     .then(function(info){
-        // if(info.role === "Manager"){
-        //     const manager = new Manager(
-        //         info.name,
-        //         info.id,
-        //         info.email,
-        //         info.officeNumber
-        //         )
-        //     employees.push(manager);
-        // }
         employees.push(info);
         addMore();
     })
