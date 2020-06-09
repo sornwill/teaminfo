@@ -40,7 +40,7 @@ function forLoop(){
     
 }
 
-function getEmployees(){ // Get's employee name, id, email via inquirer
+function getEmployees(){ // Get's employee name, id, email via inquirer then depending on choice of manager, engineer, or intern, it'll ask the prompts depending on role.
     inquirer.prompt([
         {
             type:"input",
@@ -97,35 +97,7 @@ function getEmployees(){ // Get's employee name, id, email via inquirer
 
 };
 
-function getManager(){
-    inquirer.prompt([
-        {
-            type:"input",
-            message:"What is the Manager's Office #?",
-            name:"officeNumber"
-        }
-    ])
-};
 
-function getIntern(){
-    inquirer.prompt([
-        {
-            type:"input",
-            message:"What is the Interns School?",
-            name:"school"
-        }
-    ])
-};
-
-function getEngineer(){
-    inquirer.prompt([
-        {
-            type:"input",
-            message:"What is the Engineer's GitHub Name?",
-            name:"github"
-        }
-    ])
-};
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
