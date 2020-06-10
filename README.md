@@ -23,8 +23,8 @@ An application that enables the user to add members and input information depend
 ### URL
 URL : https://github.com/sornwill/teaminfo/
 
-## Screenshots
-![screenshots](./assets/img/n/a)
+## Link To Video
+[![Team App](http://img.youtube.com/vi/xQrdTrPwzUE/0.jpg)](http://www.youtube.com/watch?v=xQrdTrPwzUE "Team App")
     
 ## Installation
 inquirer, json. 
