@@ -1,6 +1,7 @@
   
 # Team Info
 ![licenseBadge](https://img.shields.io/badge/license-MIT-brightgreen)
+![wipBadge](https://img.shields.io/badge/Work-InProgress-red)
 ## Table of Contents 
 1. [Description](#description)
 
@@ -25,6 +26,7 @@ URL : https://github.com/sornwill/teaminfo/
 
 ## Link To Video
 [![Team App](http://img.youtube.com/vi/xQrdTrPwzUE/0.jpg)](http://www.youtube.com/watch?v=xQrdTrPwzUE "Team App")
+This Video Shows My Current Progress
     
 ## Installation
 inquirer, json. 
